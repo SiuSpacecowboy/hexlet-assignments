@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import exercise.model.Post;
+import exercise.Data;
 
 @RestController
 @RequestMapping("/api")
@@ -39,3 +41,4 @@ public class PostsController {
         posts.add(newPost);
         return newPost;
     }
+}
